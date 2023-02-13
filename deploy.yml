@@ -1,7 +1,8 @@
 on: workflow_dispatch
-steps:
-  - name: Sample Azure action
-    with: # Set Azure credentials secret as an input
-      credentials: ${{ secrets.AZURE_CREDENTIALS }}
-    env: # Or as an environment variable
-      credentials: ${{ secrets.AZURE_CREDENTIALS }}
+  name: Deploy Azure Resource Manager (ARM) Template
+   uses: Azure/arm-deploy@v1.0.8
+   with:
+   scope: resourcegroup
+   resourceGroupName: "what-the-hack-devops-with-github"
+   template: "container-webapp-template.json"
+   deploymentMode: Incremental
