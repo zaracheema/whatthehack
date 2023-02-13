@@ -3,11 +3,11 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "webAppName": {
-            "defaultValue": "<prefix>devops-dev",
+            "defaultValue": "zaracdevops-dev",
             "type": "String"
         },
         "hostingPlanName": {
-            "defaultValue": "<prefix>devops-asp",
+            "defaultValue": "zaracdevops-asp",
             "type": "String"
         },
         "appInsightsLocation": {
@@ -15,7 +15,7 @@
             "type": "String"
         },
         "appInsightsName": {
-            "defaultValue": "<prefix>devops-ai",
+            "defaultValue": "zaracdevops-ai",
             "type": "String"
         },        
         "sku": {
@@ -23,11 +23,11 @@
             "type": "String"
         },
         "registryName": {
-            "defaultValue": "<prefix>devopsreg",
+            "defaultValue": "zaracdevopsreg",
             "type": "String"
         },
         "imageName": {
-            "defaultValue": "<prefix>devopsimage",
+            "defaultValue": "zaracdevopsimage",
             "type":"String"
         },
         "registryLocation": {
