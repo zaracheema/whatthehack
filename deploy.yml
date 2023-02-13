@@ -1,8 +1,6 @@
 on: workflow_dispatch
-  name: Deploy Azure Resource Manager (ARM) Template
-   uses: Azure/arm-deploy@v1.0.8
-   with:
-   scope: resourcegroup
-   resourceGroupName: "what-the-hack-devops-with-github"
-   template: "container-webapp-template.json"
-   deploymentMode: Incremental
+- name: Azure login
+  id: login
+  uses: azure/login@v1.4.3
+  with:
+  creds: ${{ secrets.AZURE_CREDENTIALS }}
